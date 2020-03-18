@@ -1,10 +1,60 @@
-.test {
-    width: 100%;
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+html, body {
     height: 100%;
+    margin: 0;
 }
 
-.test {
+/* ##### Cancel some MaterializeCss default Conf ##### */
+.row {
+    margin: 0!important;
+    width: 100%;
+}
+
+nav, ul, a {
+    color: black!important;
+    background:none!important;
+    transition: none!important;
+    box-shadow: none!important;
+    text-align: left;
+    margin-left: 40px;
+    font-family: Tomorrow, sans-serif;
+}
+/* #################################################### */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+}
+
+#cyberBtn {
+    text-align: right;
+    margin-top: 40px;
+    padding-right: 50px;
+}
+
+h1 {
+    padding-bottom: 300px;
+    font-family: Tomorrow, sans-serif;
+}
+
+.rightBtn {
+    text-align: right;
+}
+
+.downBtn {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
 }

@@ -8,79 +8,48 @@
     <meta name="description" content="Formations - Expériences - Compétences - Projets, découvrez mon parcours via mon WebCV fait maison">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/index.css">
-    <!-- Slick for Slider -->
-    <link rel="stylesheet" type="text/css" href="../static/slickSlider/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../static/slickSlider/slick-theme.css"/>
+    <link rel="stylesheet" href="../static/css/projectBtn.css">
 </head>
 <body>
-<div id="ascensor">
-<?php include('include.php')?>
-</div>
+    <div id="ascensor">
+        <section id="home" class="valign-wrapper">{% include 'section/home.html' %}</section>
+        <section id="form">{% include 'section/form/form.html' %}</section>
+        <section id="ecv">{% include 'section/form/ecv.html' %}</section>
+        <section id="eemi">{% include 'section/form/eemi.html' %}</section>
+        <section id="epitech">{% include 'section/form/epitech.html' %}</section>
+        <section id="exp">{% include 'section/exp/exp.html' %}</section>
+        <section id="bforbank">{% include 'section/exp/bforbank.html' %}</section>
+        <section id="mindmatcher">{% include 'section/exp/mindmatcher.html' %}</section>
+        <section id="microdon">{% include 'section/exp/microdon.html' %}</section>
+        <section id="aragon">{% include 'section/exp/aragon.html' %}</section>
+        <section id="comp">{% include 'section/comp/comp.html' %}</section>
+        <section id="dev">{% include 'section/comp/dev.html' %}</section>
+        <section id="design">{% include 'section/comp/design.html' %}</section>
+        <section id="lang">{% include 'section/lang/lang.html' %}</section>
+        <section id="freng">{% include 'section/lang/freng.html' %}</section>
+        <section id="hobby">{% include 'section/hobby/hobby.html' %}</section>
+        <section id="list">{% include 'section/hobby/list.html' %}</section>
+        <section id="contact">{% include 'section/contact.html' %}</section>
+    </div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="../static/jquery.ascensor.js"></script>
-    <script>
-
-        let ascensor = $("#ascensor").ascensor({
-            childType: "section",
-            ascensorFloorName: [
-                "Home",
-                "Formations", "Form-ECV", "Form-EEMI", "Form-EPITECH",
-                "EXP", "EXP-BForBank", "EXP-MindMatcher", "EXP-microDON", "EXP-Aragon-eRH",
-                "Competences", "Comp-DEV", "Comp-Design_Marketing",
-                "Langue", "FR-ENG",
-                "Hobby",
-                "Contact"
-            ],
-            time: 250,
-            windowsOn: 0,
-            direction: [
-                [0, 0], // HOME
-                [0, 1], // FORMATION
-                [1, 1],
-                [2, 1],
-                [3, 1],
-                [0, 2], // EXP
-                [1, 2],
-                [2, 2],
-                [3, 2],
-                [4, 2],
-                [0, 3], // COMP
-                [1, 3],
-                [2, 3],
-                [0, 4], // LANG
-                [1, 4],
-                [0, 5], // HOBBY
-                [0, 6], // CONTACT
-            ],
-            time: 500,
-            keyNavigation: true,
-            queued: "x",
-            wheelNavigation: true,
-            wheelNavigationDelay: 250
-        });
-
-        let ascensorInstance = ascensor.data('ascensor');   // Access instance
-
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <script src="../static/js/jquery.ascensor.min.js"></script>
+    <script src="../static/js/loadAscensor.js"></script>
+    <script type="text/javascript">
         //ascensorInstance.prev();                            // Go to previous floor
         //ascensorInstance.next();                            // Go to next floor
         //ascensorInstance.scrollToFloor(4);                  // Go to floor Index
         //ascensorInstance.scrollToFloor('content2');         // Go to floor Name
-
         function right() { ascensorInstance.scrollToDirection('right'); }
-
         function left() { ascensorInstance.scrollToDirection('left'); }
-
         function up() { ascensorInstance.scrollToDirection('up'); }
-
         function down() { ascensorInstance.scrollToDirection('down'); }
-
         function goHome() { ascensorInstance.scrollToFloor(0); }
-
         function goToEXP() { ascensorInstance.scrollToFloor('EXP'); }
     </script>
 
     <!-- Materializecss -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../static/materialize/materialize.min.css">
+    <script src="../static/materialize/materialize.min.js"></script>
 </body>
+</html>
