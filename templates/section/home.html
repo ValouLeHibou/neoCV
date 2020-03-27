@@ -1,36 +1,70 @@
+<video autoplay muted loop id="myVideo">
+    <source src="../../static/video/cyberWalk.mp4" type="video/mp4">
+</video>
+<div id="darkBG"></div>
+
+<!-- ##### WRAPPER ##### -->
 <div class="row header">
-    <div class="col s12" id="cyberBtn">
+    <div class="col s6 burger">
+        <div class="dropdown">
+            <a class="wrapper-menu dropdown-trigger dropbtn" id="wrapper" data-target='myWrapper'>
+                <div class="line-menu half start"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu half end"></div>
+            </a>
+
+            <ul id='myWrapper' class='dropdown-content'>
+                <li><a class="neonEffect" onclick="goToHome()">HOME</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a onclick="goToForm()">Formations</a></li>
+                <li><a onclick="goToEXP()">Expériences</a></li>
+                <li><a onclick="goToComp()">Compétences</a></li>
+                <li><a onclick="goToLang()">Langues</a></li>
+                <li><a onclick="goToHobby()">Hobbys</a></li>
+                <li><a onclick="goToContact()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ##### PROJECT BUTTON ##### -->
+    <div class="col s6" id="cyberBtn">
         <button class="projectBtn">
-            <div class="projectBtn__content">
-                My Projects_
-            </div>
+            <div class="projectBtn__content">My Projects_</div>
             <span class="projectBtn__glitch"></span>
             <span class="projectBtn__label">Github_42</span>
         </button>
     </div>
 </div>
+
+<!-- ##### NAV ##### -->
 <div class="row valign-wrapper">
-    <div class="col s3">
-        <nav class="row">
-                <div class="col s12"><a href='#'>- HOME -</a></div>
-                <div class="col s12"><a href='#'>Formations</a></div>
-                <div class="col s12"><a href='#'>Expériences</a></div>
-                <div class="col s12"><a href='#'>Compétences</a></div>
-                <div class="col s12"><a href='#'>Langues</a></div>
-                <div class="col s12"><a href='#'>Hobbys</a></div>
-                <div class="col s12"><a href='#'>Contacts</a></div>
-            </ul>
-        </nav>
+    <ul class="col s3 sectionList">
+        <li class="homeBtn"><span onclick="goToHome()">- HOME -</span></li>
+        <li><span class="neonEffect" onclick="goToForm()">Formations</span></li>
+        <li><span class="neonEffect" onclick="goToEXP()">Expériences</span></li>
+        <li><span class="neonEffect" onclick="goToComp()">Compétences</span></li>
+        <li><span class="neonEffect" onclick="goToLang()">Langues</span></li>
+        <li><span class="neonEffect" onclick="goToHobby()">Hobbys</span></li>
+        <li><span class="neonEffect" onclick="goToContact()">Contact</span></li>
+    </ul>
+
+    <!-- ##### MAIN ##### -->
+    <div class="col s7 title">
+        <h1 id="valentin">Valentin GUILBAUD</h1>
+        <h2 id="devops">Ingénieur DevOps</h2>
     </div>
-    <div class="col s6">
-        <h1>Valentin GUILBAUD</h1>
-    </div>
-    <div class="col s3 rightBtn">
-        <button onclick="right()">Right</button>
+    <div class="col s2 rightBtn" onclick="right()">
+        <span class="arrow right"></span>
     </div>
 </div>
+
+<!-- ##### FOOTER ##### -->
 <div class="row footer">
-    <div class="col s12 downBtn">
-        <button onclick="down()">Down</button>
+    <div onclick="down()" class="col s12 downBtn">
+        <div class="about">About</div>
+        <div class="indicator">
+            <span class="downArrow"></span>
+            <span class="downArrow"></span>
+        </div>
     </div>
 </div>

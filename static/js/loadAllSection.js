@@ -1,6 +1,6 @@
 // ##### LOAD HOME #####
 $('#home').load('section/home.html');
-console.log("toto")
+$('#about').load('section/about.html');
 // ##### LOAD FORM #####
 $('#form').load('section/form/form.html');
 $('#ecv').load('section/form/ecv.html');

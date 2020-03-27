@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>NeoCV</title>
-    <meta name="NeoCV" content="Bienvenue sur mon CV">
-    <meta name="author" content="Valentin GUILBAUD">
-    <meta name="description" content="Formations - Expériences - Compétences - Projets, découvrez mon parcours via mon WebCV fait maison">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/index.css">
-    <link rel="stylesheet" href="../static/css/projectBtn.css">
-</head>
-<body>
-    <div id="ascensor">
-        <section id="home" class="valign-wrapper">{% include 'section/home.html' %}</section>
-        <section id="form">{% include 'section/form/form.html' %}</section>
-        <section id="ecv">{% include 'section/form/ecv.html' %}</section>
-        <section id="eemi">{% include 'section/form/eemi.html' %}</section>
-        <section id="epitech">{% include 'section/form/epitech.html' %}</section>
-        <section id="exp">{% include 'section/exp/exp.html' %}</section>
-        <section id="bforbank">{% include 'section/exp/bforbank.html' %}</section>
-        <section id="mindmatcher">{% include 'section/exp/mindmatcher.html' %}</section>
-        <section id="microdon">{% include 'section/exp/microdon.html' %}</section>
-        <section id="aragon">{% include 'section/exp/aragon.html' %}</section>
-        <section id="comp">{% include 'section/comp/comp.html' %}</section>
-        <section id="dev">{% include 'section/comp/dev.html' %}</section>
-        <section id="design">{% include 'section/comp/design.html' %}</section>
-        <section id="lang">{% include 'section/lang/lang.html' %}</section>
-        <section id="freng">{% include 'section/lang/freng.html' %}</section>
-        <section id="hobby">{% include 'section/hobby/hobby.html' %}</section>
-        <section id="list">{% include 'section/hobby/list.html' %}</section>
-        <section id="contact">{% include 'section/contact.html' %}</section>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <title>NeoCV</title>
+        <meta name="NeoCV" content="Bienvenue sur mon CV">
+        <meta name="author" content="Valentin GUILBAUD">
+        <meta name="description" content="Formations - Expériences - Compétences - Projets, découvrez mon parcours via mon WebCV fait maison">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="../static/js/jquery-3.4.1.min.js"></script>
-    <script src="../static/js/jquery.ascensor.min.js"></script>
-    <script src="../static/js/loadAscensor.js"></script>
-    <script type="text/javascript">
-        //ascensorInstance.prev();                            // Go to previous floor
-        //ascensorInstance.next();                            // Go to next floor
-        //ascensorInstance.scrollToFloor(4);                  // Go to floor Index
-        //ascensorInstance.scrollToFloor('content2');         // Go to floor Name
-        function right() { ascensorInstance.scrollToDirection('right'); }
-        function left() { ascensorInstance.scrollToDirection('left'); }
-        function up() { ascensorInstance.scrollToDirection('up'); }
-        function down() { ascensorInstance.scrollToDirection('down'); }
-        function goHome() { ascensorInstance.scrollToFloor(0); }
-        function goToEXP() { ascensorInstance.scrollToFloor('EXP'); }
-    </script>
+        <!-- ##### LOAD ALL CSS ##### -->
+        <link rel="stylesheet" href="../static/css/index.css">
+        <link rel="stylesheet" href="../static/css/home.css">
+        <link rel="stylesheet" href="../static/css/form.css">
+        <link rel="stylesheet" href="../static/css/mediaQuery.css">
+        <link rel="stylesheet" href="../static/css/button/projectBtn.css">
+        <link rel="stylesheet" href="../static/css/button/downBtn.css">
+        <link rel="stylesheet" href="../static/css/button/sideBtn.css">
+        <link rel="stylesheet" href="../static/css/button/burgerBtn.css">
+    </head>
 
-    <!-- Materializecss -->
-    <link rel="stylesheet" href="../static/materialize/materialize.min.css">
-    <script src="../static/materialize/materialize.min.js"></script>
-</body>
+    <body>
+        <div id="ascensor">
+            <section id="home" class="valign-wrapper">{% include 'section/home.html' %}</section>
+            <section id="aboout">{% include 'section/about.html' %}</section>
+            <section id="form">{% include 'section/form/form.html' %}</section>
+            <section id="ecv">{% include 'section/form/ecv.html' %}</section>
+            <section id="eemi">{% include 'section/form/eemi.html' %}</section>
+            <section id="epitech">{% include 'section/form/epitech.html' %}</section>
+            <section id="exp">{% include 'section/exp/exp.html' %}</section>
+            <section id="bforbank">{% include 'section/exp/bforbank.html' %}</section>
+            <section id="mindmatcher">{% include 'section/exp/mindmatcher.html' %}</section>
+            <section id="microdon">{% include 'section/exp/microdon.html' %}</section>
+            <section id="aragon">{% include 'section/exp/aragon.html' %}</section>
+            <section id="comp">{% include 'section/comp/comp.html' %}</section>
+            <section id="dev">{% include 'section/comp/dev.html' %}</section>
+            <section id="design">{% include 'section/comp/design.html' %}</section>
+            <section id="lang">{% include 'section/lang/lang.html' %}</section>
+            <section id="freng">{% include 'section/lang/freng.html' %}</section>
+            <section id="hobby">{% include 'section/hobby/hobby.html' %}</section>
+            <section id="list">{% include 'section/hobby/list.html' %}</section>
+            <section id="contact">{% include 'section/contact.html' %}</section>
+        </div>
+
+        <!-- ##### LOAD ALL JS ##### -->
+        <script src="../static/js/jquery-3.4.1.min.js"></script>
+        <script src="../static/js/jquery.ascensor.min.js"></script>
+        <script src="../static/js/loadAscensor.js"></script>
+        <script src="../static/js/loadAscensorButton.js"></script>
+        <script src="../static/js/triggerBurgerButton.js"></script>
+        <script src="../static/js/neonEffect.js"></script>
+        <script type="text/javascript">
+            // Menu Burger
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                var instances = M.Dropdown.init(elems, {constrainWidth: false, coverTrigger: false});
+            });
+        </script>
+
+        <!-- Materializecss -->
+        <link rel="stylesheet" href="../static/materialize/materialize.min.css">
+        <script src="../static/materialize/materialize.min.js"></script>
+    </body>
 </html>

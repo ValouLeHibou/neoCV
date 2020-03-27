@@ -1,0 +1,11 @@
+function right() { ascensorInstance.scrollToDirection('right'); }
+function left() { ascensorInstance.scrollToDirection('left'); }
+function up() { ascensorInstance.scrollToDirection('up'); }
+function down() { ascensorInstance.scrollToDirection('down'); }
+function goToHome() { ascensorInstance.scrollToFloor(0); }
+function goToForm() { ascensorInstance.scrollToFloor(2); }
+function goToEXP() { ascensorInstance.scrollToFloor(6); }
+function goToComp() { ascensorInstance.scrollToFloor(11); }
+function goToLang() { ascensorInstance.scrollToFloor(14); }
+function goToHobby() { ascensorInstance.scrollToFloor(16); }
+function goToContact() { ascensorInstance.scrollToFloor(18); }

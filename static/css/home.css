@@ -1,0 +1,115 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+#darkBG {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.burger {
+    visibility: hidden;
+    margin-top: 40px;
+    padding-left: 40px!important;
+}
+
+#myWrapper {
+    background-color: rgba(0,0,0,.4);
+    font-family: Tomorrow, sans-serif;
+}
+
+#myWrapper > li:hover, #myWrapper > li > a:hover {
+    background: none;
+    font-weight: bold;
+}
+
+#cyberBtn {
+    text-align: right;
+    margin-top: 40px;
+    padding-right: 50px;
+}
+
+.sectionList > li {
+    font-family: Tomorrow, sans-serif;
+    font-weight: bold;
+    margin: 30px!important;
+}
+
+.sectionList > li > span {
+    cursor: pointer;
+}
+
+.homeBtn {
+    color: #fcee09;
+    text-shadow: 0 0 7px #00f0ff;
+}
+
+/*bd00ff*/
+
+#valentin {
+    font-family: 'CyberWay', serif;
+    font-size: 7em;
+    color: #fcee09;
+    text-shadow: 0 0 5px #00f0ff;
+}
+
+#devops {
+    font-family: Tomorrow, sans-serif;
+    color: #00f0ff;
+    text-shadow: 0 0 20px black;
+    margin-bottom: 200px;
+}
+
+#start {
+    text-align: right;
+    font-family: Tomorrow, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.rightBtn {
+    text-align: right;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-right: 10px;
+}
+
+.downBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.about {
+    font-family: Tomorrow, sans-serif;
+    color: #fcee09;
+    margin-bottom: 30px;
+}
+
+.footer {
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}

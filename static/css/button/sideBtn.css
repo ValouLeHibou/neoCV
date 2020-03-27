@@ -1,0 +1,43 @@
+/*
+
+<a href="#" class="arrow left"></a>
+<a href="#" class="arrow right"></a>
+
+ */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 7vmin;
+    height: 7vmin;
+    background: transparent;
+    border-top: 1.7vmin solid white;
+    border-right: 1.7vmin solid white;
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+}
+
+.arrow.left {
+  left: 2%;
+  transform: translate3d(0,-50%,0) rotate(-135deg);
+}
+
+.arrow.right {
+  right: 2%;
+  transform: translate3d(0,-50%,0) rotate(45deg);
+}
+
+.arrow:hover {
+  border-color: #fcee09;
+  box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+.arrow:before { // for better hit area
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%,-60%) rotate(45deg);
+  width: 200%;
+  height: 200%;
+}

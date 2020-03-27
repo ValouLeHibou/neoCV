@@ -1,18 +1,24 @@
+// ascensorInstance.prev();                            // Go to previous floor
+// ascensorInstance.next();                            // Go to next floor
+// ascensorInstance.scrollToFloor(4);                  // Go to floor Index
+// ascensorInstance.scrollToFloor('content2');         // Go to floor Name
+
 let ascensor = $("#ascensor").ascensor({
     childType: "section",
     ascensorFloorName: [
-        "Home",
+        "Home", "About",
         "Formations", "Form-ECV", "Form-EEMI", "Form-EPITECH",
-        "EXP", "EXP-BForBank", "EXP-MindMatcher", "EXP-microDON", "EXP-Aragon-eRH",
+        "EXP", "EXP-BForBank", "EXP-MindMatcher", "EXP-microDON", "EXP-Aragon",
         "Competences", "Comp-DEV", "Comp-Design_Marketing",
         "Langue", "FR-ENG",
-        "Hobby", "list",
+        "Hobby", "Hobby-List",
         "Contact"
     ],
     time: 500,
     windowsOn: 0,
     direction: [
         [0, 0], // HOME
+        [1, 0], // ABOUT
         [0, 1], // FORMATION
         [1, 1],
         [2, 1],
