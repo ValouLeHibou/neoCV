@@ -6,7 +6,7 @@ Single Page Application
 
 - Créer un fichier HTML
 - Dans `index.html` ajouter une section avec un id choisi arbitrairement
-- Dans `loadAllSection.js` ajouter une ligner avec l'id de la section ainsi que le chemin du fichier
+- Dans `loadAllSection.js` ajouter une ligne avec l'id de la section ainsi que le chemin du fichier
 - Dans `loadAscensor.js` :
     - Ajouter dans `ascensorFloorName` le nom de la section créée (ce nom peut être différent de l'id)
     - Ajouter dans `direction` la position de la section :

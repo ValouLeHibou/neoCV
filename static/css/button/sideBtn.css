@@ -33,7 +33,7 @@
 }
 
 .arrow:before { // for better hit area
-  content: '';
+  content: 'start';
   position: absolute;
   top: 50%;
   left: 50%;

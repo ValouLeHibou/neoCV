@@ -1,0 +1,23 @@
+#serverDarkBG {
+    opacity: 0.6;    
+}
+
+.aboutDescr {
+	/* VERTICAL ALIGN */
+	position: absolute;
+	top: 50%;
+	height: 100px;
+	/* VERTICAL ALIGN */
+	font-family: Tomorrow, sans-serif;
+	font-size: 3em;
+}
+
+.console {
+	line-height: 1.5;
+	font: 700 3rem 'Tomorrow', sans-serif;
+	color: white;
+}
+
+.aboutLink {
+	text-align: center;
+}

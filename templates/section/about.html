@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<video autoplay muted loop id="myVideo">
+    <source src="../../static/video/serverRoom.mp4" type="video/mp4">
+</video>
+<div class="darkBG" id="serverDarkBG"></div>
 
-</body>
-</html>
+<div class="row">
+    <div onclick="up()" class="col s12 downBtn">
+        <div class="upIndicator">
+            <span class="upArrow"></span>
+            <span class="upArrow"></span>
+        </div>
+    </div>
+</div>
+
+<div class="row valign-wrapper aboutDescr">
+	<div class="col s5 offset-s1 console">
+		<div>C:\User\Valentin> python ./neoCV.py</div>
+		<div>> HTML5</div>
+		<div>> CSS 3</div>
+		<div>> MaterializeCSS</div>
+		<div>> JQuery 3</div>
+		<div>> Ascensor.js</div>
+		<div>> Python 3</div>
+		<div>> Flask</div>
+		<div>> In a Single Page Application</div>
+		<div>-------------------------------</div>
+		<div>Visit my Github :</div>
+		<div><a href="https://github.com/ValouLeHibou">https://github.com/ValouLeHibou</a></div>
+		<div>-------------------------------</div>
+		<div>Made by Valentin GUILBAUD <span id="cursor">_</span></div>
+	</div>
+	<div class="col s6 aboutLink">
+		<div><a href="../../static/css/img/plan_du_site.png" target="_blank"><button class="aboutBtn draw-border">Plan du site</button><a></div>
+		<div><button onclick="goToContact()" class="aboutBtn draw-border">Contact</button></div>
+	</div>
+</div>

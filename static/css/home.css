@@ -7,7 +7,7 @@
     z-index: -100;
 }
 
-#darkBG {
+.darkBG {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -15,7 +15,10 @@
     min-height: 100%;
     z-index: -10;
     background-color: black;
-    opacity: 0.6;
+}
+
+#homeDarkBG {
+    opacity: 0.75;
 }
 
 .header {
@@ -46,9 +49,14 @@
     padding-right: 50px;
 }
 
+.homeBtn {
+    color: #00f0ff;
+}
+
 .sectionList > li {
     font-family: Tomorrow, sans-serif;
     font-weight: bold;
+    font-size: 1.3em;
     margin: 30px!important;
 }
 
@@ -56,24 +64,19 @@
     cursor: pointer;
 }
 
-.homeBtn {
-    color: #fcee09;
-    text-shadow: 0 0 7px #00f0ff;
-}
-
 /*bd00ff*/
 
-#valentin {
-    font-family: 'CyberWay', serif;
-    font-size: 7em;
-    color: #fcee09;
-    text-shadow: 0 0 5px #00f0ff;
+#devops {
+    font-family: 'neoneon';
+    font-size: 10em;
+    color: white;
+    text-shadow: 0 0 20px #00f0ff;
 }
 
-#devops {
-    font-family: Tomorrow, sans-serif;
-    color: #00f0ff;
-    text-shadow: 0 0 20px black;
+#valentin {
+    font-family: neoneon, sans-serif;
+    font-size: 6em;
+    text-shadow: 0 0 20px #bd00ff;
     margin-bottom: 200px;
 }
 
@@ -85,7 +88,7 @@
     text-orientation: upright;
 }
 
-.rightBtn {
+.sideBtn {
     text-align: right;
     cursor: pointer;
 }
@@ -102,7 +105,7 @@
     margin-bottom: 20px;
 }
 
-.about {
+.aboutText {
     font-family: Tomorrow, sans-serif;
     color: #fcee09;
     margin-bottom: 30px;

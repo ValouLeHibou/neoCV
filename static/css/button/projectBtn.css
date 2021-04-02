@@ -1,6 +1,6 @@
 :root {
     --yellow-color: #fcee09;
-    --red-color: #ff003c;
+    --red-color: #bd00ff;
     --black-color: #050a0e;
     --blue-color: #00f0ff;
 }
@@ -56,7 +56,7 @@
 }
 
 .btn--secondary .projectBtn__glitch {
-    background-color: var(--red-color);
+    background-color: var(--yellow-color);
 }
 
 .projectBtn:hover .projectBtn__glitch,
