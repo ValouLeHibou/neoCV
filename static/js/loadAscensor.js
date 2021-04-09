@@ -7,7 +7,7 @@ let ascensor = $("#ascensor").ascensor({
     childType: "section",
     ascensorFloorName: [
         "Home", "About",
-        "Formations", "Form-ECV", "Form-EEMI", "Form-EPITECH",
+        "Formations", "Form-ECV", "Form-EEMI", "Form-EPITECH", "Form-BAC",
         "EXP", "EXP-BForBank", "EXP-MindMatcher", "EXP-microDON", "EXP-Aragon",
         "Competences", "Comp-DEV", "Comp-Design_Marketing",
         "Langue", "FR-ENG",
@@ -23,6 +23,7 @@ let ascensor = $("#ascensor").ascensor({
         [1, 1],
         [2, 1],
         [3, 1],
+        [4, 1],
         [0, 2], // EXP
         [1, 2],
         [2, 2],

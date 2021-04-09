@@ -1,3 +1,33 @@
-<h1>MINDMATCHER</h1>
-<button onclick="down()">Down</button>
-<button onclick="up()">up</button>
+{% set sectionTitle = "MindMatcher" %}
+{% set underSectionTitle = "Alternance DevOps" %}
+{% set urlLogo = "../../../static/css/img/logo/mindmatcher.png" %}
+{% set year = "Années 2018/2019" %}
+{% set mainText = "Quelques mois après mon initiation au DevOps chez microDON, j'ai été intégré à l'équipe de MindMatcher, une société de cartographie de compétences. Mon rôle a été de réaliser un support dev/infra via des technologies comme Docker, Rancher ou encore framagit. L'entreprise étant de très petite taille (5 à 7 salairés), j'ai dû être autodidacte tout au long de mon alternance." %}
+
+{% set trophy1 = "> Mise en place de la technologie OpenBadge" %}
+{% set trophy2 = "> Développement d'API" %}
+{% set trophy3 = "> Participation au Hack in Paris" %}
+{% set trophy4 = "" %}
+{% set trophy5 = "" %}
+
+{% set skill1 = "API GraphQL" %}
+{% set skill2 = "Elastic Stack ELK" %}
+{% set skill3 = "APIgee" %}
+{% set skill4 = "Docker" %}
+{% set skill5 = "Google Cloud Plateform" %}
+{% set skill6 = "Pipeline" %}
+{% set skill7 = "Cronjobs" %}
+{% set skill8 = "" %}
+{% set skill9 = "" %}
+{% set lastSkill = "" %}
+
+<div class="wallMindmatcher"></div>
+{% include 'section/repeatedTemplates/section.html' %}
+<div class="row footer">
+    <div onclick="down()" class="col s12 downBtn">
+        <div class="indicator">
+            <span class="downArrow"></span>
+            <span class="downArrow"></span>
+        </div>
+    </div>
+</div>

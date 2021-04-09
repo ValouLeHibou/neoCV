@@ -1,3 +1,33 @@
-<h1>EPITECH</h1>
-<button onclick="up()">up</button>
-<button onclick="goToEXP()">EXP</button>
+{% set sectionTitle = "Epitech" %}
+{% set underSectionTitle = "Licence Ingénieur Informatique" %}
+{% set urlLogo = "../../../static/css/img/logo/epitech.png" %}
+{% set year = "Années 2014/2016" %}
+{% set mainText = "Arrivé à Epitech sans expérience, la piscine a été une épreuve a surmonter. C'est ici que j'ai appris les bases de ce que je connais aujourd'hui mais aussi et surtout c'est à Epitech que j'ai appris à chercher et à travailler par mes propres moyens, en clair, à être autodidacte. Le système d'apprentissage ainsi que le côté concurrence et 'Usine' de l'école me déplaisant, je ne suis resté que 2 ans à Epitech. Pour autant, l'expérience a été très enrichissante et ce ne sont clairement pas des années perdues pour moi." %}
+
+{% set trophy1 = "> Piscine C de 1ère année" %}
+{% set trophy2 = "> Piscine de synthèse" %}
+{% set trophy3 = "> Piscine C++ de 2ème année" %}
+{% set trophy4 = "" %}
+{% set trophy5 = "" %}
+
+{% set skill1 = "Langage C" %}
+{% set skill2 = "Langage C++" %}
+{% set skill3 = "Linux/Bash" %}
+{% set skill4 = "Du C" %}
+{% set skill5 = "HTML/CSS" %}
+{% set skill6 = "Encore un peu de C" %}
+{% set skill7 = "Et du C je crois aussi" %}
+{% set skill8 = "" %}
+{% set skill9 = "" %}
+{% set lastSkill = "" %}
+
+<div class="wallEpitech"></div>
+{% include 'section/repeatedTemplates/section.html' %}
+<div class="row footer">
+    <div onclick="down()" class="col s12 downBtn">
+        <div class="indicator">
+            <span class="downArrow"></span>
+            <span class="downArrow"></span>
+        </div>
+    </div>
+</div>

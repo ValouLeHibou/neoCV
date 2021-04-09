@@ -1,3 +1,33 @@
-<h1>ECV</h1>
-<button onclick="down()">Down</button>
-<button onclick="up()">up</button>
+{% set sectionTitle = "ECV Digital" %}
+{% set underSectionTitle = "Mastère Développement Web" %}
+{% set urlLogo = "../../../static/css/img/logo/ecv.png" %}
+{% set year = "Années 2019/2021" %}
+{% set mainText = "Après ma licence j'ai décidé de quitter l'EEMI afin de pouvoir faire évoluer mon environnement de travail et par la même occasion mon quotidien. J'ai ainsi trouvé l'ECV Digital qui correspondait à mes critères d'école à taille humaine ainsi que ma volonté de vouloir réaliser de l'alternance pour mes deux dernières années. C'est aussi grâce à cette école que j'ai pu développé de nouvelles passions dans l'impression 3D et l'utilisation d'outil comme le raspberry Pi." %}
+
+{% set trophy1 = "> Victoire Hackathon ECV" %}
+{% set trophy2 = "> Responsable au HackaDON microDON" %}
+{% set trophy3 = "> Présentation aux bourses du savoir sur le DarkWeb" %}
+{% set trophy4 = "> Responsable stand PS5 FFXIV à la PGW" %}
+{% set trophy5 = "" %}
+
+{% set skill1 = "Raspberry Pi" %}
+{% set skill2 = "Impression 3D" %}
+{% set skill3 = "Arduino" %}
+{% set skill4 = "JS" %}
+{% set skill5 = "Symfony/Laravel" %}
+{% set skill6 = "Python" %}
+{% set skill7 = "Docker" %}
+{% set skill8 = "Projets" %}
+{% set skill9 = "Management" %}
+{% set lastSkill = "" %}
+
+<div class="wallECV"></div>
+{% include 'section/repeatedTemplates/section.html' %}
+<div class="row footer">
+    <div onclick="down()" class="col s12 downBtn">
+        <div class="indicator">
+            <span class="downArrow"></span>
+            <span class="downArrow"></span>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,7 @@ $('#form').load('section/form/form.html');
 $('#ecv').load('section/form/ecv.html');
 $('#eemi').load('section/form/eemi.html');
 $('#epitech').load('section/form/epitech.html');
+$('#bac').load('section/form/bac.html');
 
 // ##### LOAD EXP #####
 $('#exp').load('section/exp/exp.html');

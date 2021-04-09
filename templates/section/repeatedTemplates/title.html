@@ -1,0 +1,55 @@
+<!-- ##### WRAPPER ##### -->
+<div class="row header">
+    <div class="col s6">
+        <div class="dropdown">
+            <a class="wrapper-menu dropdown-trigger dropbtn" id="wrapper" data-target='myWrapper'>
+                <div class="line-menu half start"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu half end"></div>
+            </a>
+
+            <ul id='myWrapper' class='dropdown-content'>
+                <li><a onclick="goToHome()">HOME</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a onclick="goToForm()">Formations</a></li>
+                <li><a onclick="goToEXP()">Expériences</a></li>
+                <li><a onclick="goToComp()">Compétences</a></li>
+                <li><a onclick="goToLang()">Langues</a></li>
+                <li><a onclick="goToHobby()">Hobbys</a></li>
+                <li><a onclick="goToContact()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ##### PROJECT BUTTON ##### -->
+    <div class="col s6" id="cyberBtn">
+        <button class="projectBtn">
+            <div class="projectBtn__content">My Projects_</div>
+            <span class="projectBtn__glitch"></span>
+            <span class="projectBtn__label">Github_42</span>
+        </button>
+    </div>
+</div>
+<div class="row valign-wrapper formMain">
+    <div class="col s2 sideBtn" onclick="left()">
+        <span class="arrow left"></span>
+    </div>
+
+    <div class="col s8">
+		<h2 class="neonEffect mainTitle">{{ mainTitle }}</h2>
+		<h3 class="neonEffect underTitle">{{ underTitle }}</h3>
+	</div>
+
+    <div class="col s2 sideBtn" onclick="right()">
+        <span class="arrow right"></span>
+    </div>
+</div>
+
+<div class="row footer">
+    <div onclick="down()" class="col s12 downBtn">
+        <div class="downArrowText">Explorer</div>
+        <div class="indicator">
+            <span class="downArrow"></span>
+            <span class="downArrow"></span>
+        </div>
+    </div>
+</div>

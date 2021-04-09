@@ -10,6 +10,10 @@ def main():
 #    print('Hello world!', file=sys.stderr)<
     return render_template('index.html')
 
+@app.route('/test')
+def test():
+#    print('Hello world!', file=sys.stderr)<
+    return render_template('test.html')
 
 if __name__ == '__main__':
     app.debug = True

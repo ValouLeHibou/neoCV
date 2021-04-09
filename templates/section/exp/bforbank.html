@@ -1,3 +1,33 @@
-<h1>BFORBANK</h1>
-<button onclick="down()">Down</button>
-<button onclick="up()">up</button>
+{% set sectionTitle = "BForBank" %}
+{% set underSectionTitle = "Alternance DevOps" %}
+{% set urlLogo = "../../../static/css/img/logo/bforbank.png" %}
+{% set year = "Années 2019/2021" %}
+{% set mainText = "Pour mon alternance à l'ECV digital, j'ai été engagé pour 2 ans dans l'équipe industrialisation recette de la banque en ligne BForBank. J'ai souhaité ce poste car je n'avais aucune expérience dans une entreprise de cette taille (environ 300 salariés), aussi, on m'avais souvent recommandé de travailler au moins une fois dans une banque. Sur place, j'y ai développé des compétences manquantes comme le travail en projet avec un processus bien défini ou encore le travail avec les grandes contraintes de sécurité d'une banque." %}
+
+{% set trophy1 = "> Responsable de l'upgrade Python 3" %}
+{% set trophy2 = "> Responsable upgrade de la suite ELK" %}
+{% set trophy3 = "> Responsable mise en place de sonarQube" %}
+{% set trophy4 = "" %}
+{% set trophy5 = "" %}
+
+{% set skill1 = "Ansible" %}
+{% set skill2 = "Python" %}
+{% set skill3 = "Bash/VIM" %}
+{% set skill4 = "Graylog" %}
+{% set skill5 = "ELK" %}
+{% set skill6 = "SonarQube" %}
+{% set skill7 = "Bamboo" %}
+{% set skill8 = "" %}
+{% set skill9 = "" %}
+{% set lastSkill = "" %}
+
+<div class="wallBforbank"></div>
+{% include 'section/repeatedTemplates/section.html' %}
+<div class="row footer">
+    <div onclick="down()" class="col s12 downBtn">
+        <div class="indicator">
+            <span class="downArrow"></span>
+            <span class="downArrow"></span>
+        </div>
+    </div>
+</div>

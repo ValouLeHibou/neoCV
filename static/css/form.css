@@ -1,33 +1,124 @@
-.wallForm {
-    background-image: url('./img/wallVectorised1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -10;
-}
-
+/* ##### Main Slide ##### */
 .formMain {
     position: absolute;
     top: 50%;
     height: 100px;
 }
 
-#formTitle {
+.mainTitle {
     font-family: 'neoneon', sans-serif;
-    font-size: 12em;
+    font-size: 8em;
     color: white;
     text-shadow: 0 0 25px blue;
 }
 
-#dateForm {
+.underTitle {
     font-family: neoneon, sans-serif;
-    font-size: 8em;
+    font-size: 5em;
     text-shadow: 0 0 25px red;
     margin-bottom: 200px;
+}
+
+/* ##### Section Slide ##### */
+
+.mainSection {
+    /* VERTICAL ALIGN */
+    position: absolute;
+    top: 10%;
+    height: 100px;
+    /* VERTICAL ALIGN */
+}
+
+.textSection {
+    /* VERTICAL ALIGN */
+    position: absolute;
+    top: 35%;
+    height: 100px;
+    /* VERTICAL ALIGN */
+}
+
+.titleSection {
+    font-family: 'neoneon', sans-serif;
+    font-size: 6em;
+    color: white;
+    text-shadow: 0 0 20px blue;
+}
+
+.underTitle {
+    font-family: 'neoneon', sans-serif;
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 0 20px red;
+    margin-bottom: 150px
+}
+
+.logo {
+    text-align: right;
+}
+
+.logoEpitech > img {
+    width: 250px
+}
+
+
+.year {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+.sectionDescr {
+    font-family: 'Tomorrow', sans-serif;
+    text-align: justify;
+    font-size: 1.25em;
+    padding: 0 40px 0 40px;
+    color: white;
+}
+
+.spaceBtwn {
+    margin: 20px 0 20px 40px;
+    font-size: 1.3em;
+}
+
+.sectionTrophy {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 1.25em;
+    padding: 0 40px 0 40px;
+    color: white;
+}
+
+.trophy {
+    font-size: 1.5em;
+}
+
+.trophyList {
+    margin: 0 40px 0 40px;
+    font-size: 1.25em;
+}
+
+.skills {
+    font-size: 1.5em;
+    margin: 20px 0 20px 0;
+}
+
+.backToHome {
+    text-align: right;
+}
+
+.backToBtn {
+    /* VERTICAL ALIGN */
+    position: absolute;
+    top: 82%;
+    height: 100px;
+    /* VERTICAL ALIGN */
+}
+
+.backTo {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 900 1.2rem 'Tomorrow', sans-serif;
+  padding: 0.8em 1.2em;
+  letter-spacing: 0.05rem;
 }

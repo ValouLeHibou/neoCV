@@ -1,0 +1,32 @@
+.wallForm, .wallComp, .wallHobby, .wallEEMI, .wallDesign, .wallBac  {
+    background-image: url('./img/wallVectorised1.png');
+}
+
+.wallExp, .wallLang, .wallMindmatcher, .wallAragon {
+    background-image: url('./img/wallVectorised2.png');
+}
+
+.wallECV, .wallDev, .wallList, .wallEpitech{
+    background-image: url('./img/wallVectorised3.png');
+}
+
+.wallBforbank, .wallFreng, .wallMicrodon  {
+    background-image: url('./img/wallVectorised4.png');
+}
+
+.wallForm, .wallECV, .wallEEMI, .wallEpitech, .wallBac,
+.wallExp, .wallBforbank, .wallMindmatcher, .wallMicrodon, .wallAragon,
+.wallComp, .wallDev, .wallDesign,
+.wallLang, .wallFreng,
+.wallHobby, .wallList {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}

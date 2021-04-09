@@ -1,10 +1,10 @@
-.draw-border {
+.draw-border, .draw-border-pink {
    box-shadow: inset 0 0 0 4px #fff;
    color: #fff;
    transition: color 0.25s 0.0833333333s;
    position: relative;
 }
- .draw-border::before, .draw-border::after {
+ .draw-border::before, .draw-border::after, .draw-border-pink::before, .draw-border-pink::after {
    border: 0 solid transparent;
    box-sizing: border-box;
    content: '';
@@ -15,11 +15,11 @@
    bottom: 0;
    right: 0;
 }
- .draw-border::before {
+ .draw-border::before, .draw-border-pink::before {
    border-bottom-width: 4px;
    border-left-width: 4px;
 }
- .draw-border::after {
+ .draw-border::after, .draw-border-pink::after {
    border-top-width: 4px;
    border-right-width: 4px;
 }
@@ -27,16 +27,30 @@
    color: #00f0ff;
    text-shadow: 0 0 10px #00f0ff;
 }
+
+ .draw-border-pink:hover {
+   color: #bd00ff;
+   text-shadow: 0 0 10px #bd00ff;
+ }
+
  .draw-border:hover::before, .draw-border:hover::after {
    border-color: #00f0ff;
    transition: border-color 0s, width 0.2s, height 0.2s;
    width: 100%;
    height: 100%;
 }
- .draw-border:hover::before {
+
+ .draw-border-pink:hover::before, .draw-border-pink:hover::after {
+   border-color: #bd00ff;
+   transition: border-color 0s, width 0.2s, height 0.2s;
+   width: 100%;
+   height: 100%
+ }
+
+ .draw-border:hover::before, .draw-border-pink:hover::before {
    transition-delay: 0s, 0s, 0.2s;
 }
- .draw-border:hover::after {
+ .draw-border:hover::after, .draw-border-pink:hover::after {
    transition-delay: 0s, 0.2s, 0s;
 }
 

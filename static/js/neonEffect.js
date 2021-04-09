@@ -7,7 +7,8 @@ function randomNbr(min, max) {
 }
 
 function divThemAll() {
-    for (var i = 0; i < 2; i++) {
+    let neonNbr = $('.neonEffect').length;
+    for (var i = 0; i < neonNbr; i++) {
         let myString = $('.neonEffect')[i].textContent;
         let newString = "";
         for (var j = 0; j < myString.length; j++) {
@@ -18,36 +19,53 @@ function divThemAll() {
 }
 
 const neonLoop = async () => {
-    await sleep(2500); // Wait before loop restart
-    let i = 0;
-    let freezeNbr = $('.freeze').length;
-    let letter = randomNbr(0, freezeNbr - 1);
-    while (i != 15) {
-        let freezeOne = randomNbr(10, 80);
-        let freezeTwo = randomNbr(10, 80);
-        neonOff(letter);
-        await sleep(freezeOne);
-        reset(letter);
-        await sleep(freezeTwo);
-        i++;
+    await sleep(2500);
+    let neonNbr = $('.neonEffect').length;
+    let doIt = randomNbr(0, 1);
+    for (var i = 0; i < neonNbr; i++) {
+        if (doIt == 1) {
+            let again = 0;
+            let letter = randomNbr(0, $('.neonEffect')[i].children.length - 1);
+            while (again != 15) {
+                let freezeOne = randomNbr(10, 80);
+                let freezeTwo = randomNbr(10, 80);
+                neonOff(i, letter);
+                await sleep(freezeOne);
+                reset(i, letter);
+                await sleep(freezeTwo);
+                again++;
+            }
+        doIt = 0;
+        }
+        else if (doIt == 0) {
+            doIt = 1;
+        }
     }
-    reset(letter);
     neonLoop();
 }
 
-function neonOff(letter) {
-    $('.freeze')[letter].style.textShadow = 'none';
-    $('.freeze')[letter].style.color = 'black';
+function neonOff(neon, letter) {
+    if ($('.neonEffect')[neon].children[letter].innerHTML != " ") {
+        $('.neonEffect')[neon].children[letter].style.textShadow = 'none';
+        $('.neonEffect')[neon].children[letter].style.color = 'black';
+    }
 }
 
-function reset(letter) {
-    if ($('.freeze')[letter].parentElement.id == "devops") {
-        $('.freeze')[letter].style.textShadow = '0 0 20px #00f0ff';
-        $('.freeze')[letter].style.color = 'white';
-    }
-    if ($('.freeze')[letter].parentElement.id == "valentin") {
-        $('.freeze')[letter].style.textShadow = '0 0 20px #bd00ff';
-        $('.freeze')[letter].style.color = 'white';
+function reset(neon, letter) {
+    if ($('.neonEffect')[neon].children[letter].innerHTML != " ") {
+        $('.neonEffect')[neon].children[letter].style.color = 'white';
+        if ($('.neonEffect')[neon].classList[1] == "devops") {
+            $('.neonEffect')[neon].children[letter].style.textShadow = '0 0 20px #00f0ff';
+        }
+        else if ($('.neonEffect')[neon].classList[1] == "valentin") {
+            $('.neonEffect')[neon].children[letter].style.textShadow = '0 0 20px #bd00ff';
+        }
+        else if ($('.neonEffect')[neon].classList[1] == "mainTitle") {
+            $('.neonEffect')[neon].children[letter].style.textShadow = '0 0 25px blue';
+        }
+        else if ($('.neonEffect')[neon].classList[1] == "underTitle") {
+            $('.neonEffect')[neon].children[letter].style.textShadow = '0 0 25px red';
+        }
     }
 }
 

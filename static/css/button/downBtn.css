@@ -1,17 +1,21 @@
 /*
-
 <div class="indicator">
     <span class="downArrow"></span>
     <span class="downArrow"></span>
 </div>
-
- */
+*/
 
 .indicator {
     position: relative;
     width: 50px;
     height: 50px;
     transform: rotate(45deg);
+}
+
+.downArrowText {
+    font-family: Tomorrow, sans-serif;
+    color: #fcee09;
+    margin-bottom: 30px;
 }
 
 .downArrow {
@@ -24,7 +28,7 @@
     border:none;
     border-bottom:3px solid #fff;
     border-right:3px solid #fff;
-    animation:animateDown 1s linear infinite;
+    animation:animate 1s linear infinite;
 }
 
 .upIndicator {
@@ -45,7 +49,7 @@
     border:none;
     border-bottom:3px solid #fff;
     border-right:3px solid #fff;
-    animation:animateUp 1s linear infinite;
+    animation:animate 1s linear infinite;
 }
 
 .downArrow:nth-child(1), .upArrow:nth-child(1){
@@ -78,7 +82,7 @@
   animation-delay:0.8s;
 }
 
-@keyframes animateDown {
+@keyframes animate {
     0%{
         border-color:#fff;
         transform:translate(0,0);
@@ -89,19 +93,5 @@
     }
     20.1%,100%{
         border-color:#fcee09;
-    }
-}
-
-@keyframes animateUp{
-    0%{
-        border-color:#fff;
-        transform:translate(0,0);
-    }
-    20%{
-        border-color:#fff;
-        transform:translate(5px,5px);
-    }
-    20.1%,100%{
-        border-color:#00f0ff;
     }
 }

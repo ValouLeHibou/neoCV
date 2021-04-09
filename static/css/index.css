@@ -8,16 +8,14 @@
 html, body {
     height: 100%;
     margin: 0;
-}
-
-section, .row {
-    display: flex;
+    background-color: black;
 }
 
 section {
     flex-direction: column;
     color: white;
     justify-content: center;
+    display: flex;
 }
 
 /* ##### Change some MaterializeCss default Conf ##### */
