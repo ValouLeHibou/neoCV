@@ -14,11 +14,16 @@
     background-image: url('./img/wallVectorised4.png');
 }
 
+.contact {
+    background-image: url('./img/contactBG.png');
+}
+
 .wallForm, .wallECV, .wallEEMI, .wallEpitech, .wallBac,
 .wallExp, .wallBforbank, .wallMindmatcher, .wallMicrodon, .wallAragon,
 .wallComp, .wallDev, .wallDesign,
 .wallLang, .wallFreng,
-.wallHobby, .wallList {
+.wallHobby, .wallList,
+.contact {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

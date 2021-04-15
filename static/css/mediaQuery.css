@@ -1,12 +1,50 @@
 @media only screen and (max-width: 1200px) {
-
+    /* ##### HOME ##### */
     h1 { font-size: 6em!important; }
-    h2 { font-size: 3em!important; }
+    h2 { font-size: 3.5em!important; }
+    h3 { font-size: 2.5em!important; }
+    h4 { font-size: 2em!important; }
+
+
+    /* ##### ABOUT ##### */
+    .console { font-size: 1.5rem; }
+    .aboutBtn {
+      line-height: 1 !important;
+      font: 500 1.5rem 'Tomorrow', sans-serif !important;
+      padding: 1em 1em !important;
+      letter-spacing: 0.05rem !important;
+      margin: 10px !important;
+    }
+
+    /* ##### SECTION ##### */
+    .year  { font-size: 2em; }
+
+    .trophy { font-size: 1.25em; }
+
+    .trophyList { margin: 5px; }
+
+    .textSection { top: 30%; }
+
+    .sectionDescr, .trophyList { font-size: 1em !important }
+
+    .logo { display: none; }
+
+    /* ##### SECTION ##### */
+    .skillSection {
+        top: 22%;
+    }
+
+    .spaceBtwn {
+        margin: 5px 0 5px 10px;
+        font-size: 1em;
+    }
+
+    .persona { font-size: 1em; }
 }
 
 @media only screen and (max-width: 900px) {
-
-    .sectionList { display: none!important;}
+    /* ##### HOME ##### */
+    .sectionList { display: none!important; }
     .burger { visibility: initial!important; }
     .header { float: initial!important; }
 
@@ -18,12 +56,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-
+/* ##### HOME ##### */
     body { background-color: #444444; }
 
     h1 {font-size: 3em!important; }
 
-    h2 { font-size: 2em!important; }
+    h2 { font-size: 2.5em!important; }
+
+    h3 { font-size: 2em!important; }
+
+    h4 { font-size: 1.8em!important; }
 
     .sectionList { display: none!important;}
 
@@ -31,7 +73,41 @@
 
     .footer .downBtn{ float: initial!important; }
 
-    video { display: none!important;
+    /* ##### ABOUT ##### */
+    .console { font-size: 1rem; }
 
+    .aboutLink { margin-top: 50px; }
+
+    .aboutBtn {
+      line-height: 0.5 !important;
+      font: 300 1.5rem 'Tomorrow', sans-serif !important;
     }
+
+    /* ##### SECTION ##### */
+
+    .mainSection {
+        top: 13%;
+    }
+
+    .textSection {
+        top: 35%;
+    }
+
+    .sectionTrophy, .hideSkills, .backToBtn {
+        display: none;
+    }
+
+    .skillType {
+        font-size: 1em !important;
+    }
+
+    .spaceBtwn {
+        margin: 5px 0 5px 5px;
+        font-size: 0.6em;
+    }
+
+    .hobbieSection > div {
+        margin-bottom: 10px !important;
+    }
+
 }

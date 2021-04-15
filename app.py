@@ -10,10 +10,21 @@ def main():
 #    print('Hello world!', file=sys.stderr)<
     return render_template('index.html')
 
-@app.route('/test')
-def test():
-#    print('Hello world!', file=sys.stderr)<
-    return render_template('test.html')
+@app.route('/project')
+def project():
+    return render_template('/project/project.html')
+
+@app.route('/project/cv')
+def cv():
+    return render_template('project/CV/index.php')
+
+@app.route('/project/newsAPI')
+def newsapi():
+    return render_template('project/newsAPI/index.html')
+
+@app.route('/project/meteoAPI')
+def meteoapi():
+    return render_template('project/meteoAPI/ajax.html')
 
 if __name__ == '__main__':
     app.debug = True

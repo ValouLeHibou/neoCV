@@ -1,11 +1,11 @@
 #serverDarkBG {
-    opacity: 0.6;    
+    opacity: 0.8;    
 }
 
 .aboutDescr {
 	/* VERTICAL ALIGN */
 	position: absolute;
-	top: 50%;
+	top: 25%;
 	height: 100px;
 	/* VERTICAL ALIGN */
 	font-family: Tomorrow, sans-serif;

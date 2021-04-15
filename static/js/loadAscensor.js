@@ -8,10 +8,10 @@ let ascensor = $("#ascensor").ascensor({
     ascensorFloorName: [
         "Home", "About",
         "Formations", "Form-ECV", "Form-EEMI", "Form-EPITECH", "Form-BAC",
-        "EXP", "EXP-BForBank", "EXP-MindMatcher", "EXP-microDON", "EXP-Aragon",
-        "Competences", "Comp-DEV", "Comp-Design_Marketing",
-        "Langue", "FR-ENG",
-        "Hobby", "Hobby-List",
+        "EXP", "EXP-BForBank", "EXP-MindMatcher", "EXP-microDON", "EXP-Aragon", "EXP-Pc",
+        "Competences", "Comp-HardSkills", "Comp-SoftSkills",
+        "Langue", "ENG",
+        "Hobbie", "Hobbie-List",
         "Contact"
     ],
     time: 500,
@@ -29,6 +29,7 @@ let ascensor = $("#ascensor").ascensor({
         [2, 2],
         [3, 2],
         [4, 2],
+        [5, 2],
         [0, 3], // COMP
         [1, 3],
         [2, 3],

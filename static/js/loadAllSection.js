@@ -14,19 +14,20 @@ $('#bforbank').load('section/exp/bforbank.html');
 $('#mindmatcher').load('section/exp/mindmatcher.html');
 $('#microdon').load('section/exp/microdon.html');
 $('#aragon').load('section/exp/aragon.html');
+$('#pc').load('section/exp/pc.html');
 
 // ##### LOAD COMP #####
 $('#comp').load('section/comp/comp.html');
-$('#dev').load('section/comp/dev.html');
-$('#design').load('section/comp/design.html');
+$('#hard').load('section/comp/hardSkills.html');
+$('#soft').load('section/comp/softSkills.html');
 
 // ##### LOAD LANG #####
 $('#lang').load('section/lang/lang.html');
-$('#freng').load('section/lang/freng.html');
+$('#english').load('section/lang/english.html');
 
 // ##### LOAD HOBBY #####
-$('#hobby').load('section/hobby/hobby.html');
-$('#list').load('section/hobby/list.html');
+$('#hobbie').load('section/hobbie/hobbie.html');
+$('#list').load('section/hobbie/list.html');
 
 // ##### LOAD CONTACT #####
 $('#contact').load('section/contact.html');

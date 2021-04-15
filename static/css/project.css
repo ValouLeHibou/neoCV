@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+@font-face {
+    font-family: neoneon;
+    src: url("neoneon.otf") format("opentype");
+}
+
+html {
+	background-color: #333;
+	color: white !important;
+}
+
+.parallax-container {
+	opacity: 0.8;
+   width: 100.01%; /* Hide little white left space */
+}
+
+h3 {
+	font-size: 2em !important;
+}
+
+.section {
+	font-family: Tomorrow, sans-serif !important;
+	color: white !important;
+}
+
+.blueLight {
+	box-shadow: 0 0 20px #00f0ff;
+}
+
+.pinkLight {
+	box-shadow: 0 0 20px #bd00ff;
+}
+
+.header {
+    font-family: 'neoneon';
+    font-size: 8em;
+    color: white;
+    text-shadow: 0 0 20px #00f0ff;
+}
+
+.subtitle {
+	font-size: 1.1em;
+}
+
+.projectDescr {
+	font-size: 1.25em;
+}
+
+.link {
+	font-weight: bold;
+	font-size: 1.25;
+}

@@ -7,8 +7,10 @@
     </div>
 </div>
 <div class="row mainSection">
-	<div class="col s7 offset-s1">
-		<h3 class="titleSection">{{ sectionTitle }}</h3>
+	<div class="col s11 m7 offset-s1 offset-m1">
+		<h3 class="titleSection">
+			{{ sectionTitle }}
+		</h3>
 		<h4 class="underTitle">
 			{{ underSectionTitle }}
 		</h4>
@@ -18,7 +20,7 @@
 	</div>
 </div>
 <div class="row textSection">
-	<div class="col s6 offset-s1">
+	<div class="col s10 m6 offset-s1 offset-m1">
 		<h5 class="year">
 			{{ year }}
 		</h5>
@@ -26,7 +28,7 @@
 			{{ mainText }}
 		</p>
 	</div>
-	<div class="col s4 sectionTrophy">
+	<div class="col s3 offset-s1 sectionTrophy">
 		<div class="trophy">Hauts-Faits :</div>
 		<ul>
 			<li class='trophyList'>{{ trophy1 }}</li>
@@ -36,7 +38,7 @@
 			<li class='trophyList'>{{ trophy5 }}</li>
 		</ul>
 	</div>
-	<div class="col s10 offset-s1 sectionDescr">
+	<div class="col s10 offset-s1 sectionDescr hideSkills">
 		<div class="skills">Principales compétences obtenues :</div>
 		<strong class="spaceBtwn">{{ skill1 }}</strong>
 		<strong class="spaceBtwn">{{ skill2 }}</strong>
@@ -51,10 +53,10 @@
 	</div>
 </div>
 <div class="row backToBtn">
-	<div class="col s3 offset-s3 backToHome">
+	<div class="col s12 m4 offset-m2 backToHome">
 		<button onclick="goToHome()" class="backTo draw-border">Back to Home</button>
 	</div>
-	<div class="col s3">
+	<div class="col s12 m4">
 		<button onclick="goToForm()" class="backTo draw-border-pink">Back to Section</button>
 	</div>
 </div>
