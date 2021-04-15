@@ -30,3 +30,15 @@ Liste des Technos :
 - Python3
 - Flask
 - Single Page App
+
+Run Flask on Raspberry pi 4 as server
+Initialize Python venv :
+
+$ python3 -m venv venv
+// Le second venv est un nom d'environnement arbitraire
+
+$ Run the venv :
+. venv/bin/activate
+
+Quit the venv :
+$ deactive
