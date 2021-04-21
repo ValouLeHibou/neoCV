@@ -26,5 +26,17 @@ def newsapi():
 def meteoapi():
     return render_template('project/meteoAPI/ajax.html')
 
+@app.route('/project/secretProject')
+def ski():
+    return render_template('project/secretProject/index.php')
+
+@app.route('/project/secretProject/photo')
+def photo():
+    return render_template('project/secretProject/php/photo.php')
+
+@app.route('/project/secretProject/fire')
+def fire():
+    return render_template('project/secretProject/php/fire.php')
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80, debug=True)
