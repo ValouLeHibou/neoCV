@@ -1,4 +1,4 @@
-.wallForm, .wallComp, .wallHobby, .wallEEMI, .wallDesign, .wallBac  {
+.wallForm, .wallComp, .wallHobby, .wallEEMI, .wallDesign, .wallBac, .wallSoft  {
     background-image: url('./img/wallVectorised1.png');
 }
 
@@ -6,11 +6,11 @@
     background-image: url('./img/wallVectorised2.png');
 }
 
-.wallECV, .wallDev, .wallList, .wallEpitech{
+.wallECV, .wallHard, .wallList, .wallEpitech {
     background-image: url('./img/wallVectorised3.png');
 }
 
-.wallBforbank, .wallFreng, .wallMicrodon  {
+.wallBforbank, .wallFreng, .wallMicrodon, .wallPc  {
     background-image: url('./img/wallVectorised4.png');
 }
 
@@ -19,8 +19,8 @@
 }
 
 .wallForm, .wallECV, .wallEEMI, .wallEpitech, .wallBac,
-.wallExp, .wallBforbank, .wallMindmatcher, .wallMicrodon, .wallAragon,
-.wallComp, .wallDev, .wallDesign,
+.wallExp, .wallBforbank, .wallMindmatcher, .wallMicrodon, .wallAragon, .wallPc,
+.wallComp, .wallHard, .wallSoft,
 .wallLang, .wallFreng,
 .wallHobby, .wallList,
 .contact {

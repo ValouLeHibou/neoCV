@@ -53,6 +53,10 @@
         width: 160px!important;
         height: 55px!important;
     }
+
+    .parallax-container {
+        height: 250px !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,8 +110,24 @@
         font-size: 0.6em;
     }
 
-    .hobbieSection > div {
-        margin-bottom: 10px !important;
+    .langSkill {
+        top: 30%;
+        font-size: 0.8;
     }
 
+    .hobbieSection > div {
+        margin-bottom: 30px !important;
+    }
+
+    .contactList img {
+        width: 20%;
+    }
+
+    .projectDescr {
+        font-size: 1em !important;
+    }
+
+    .parallax-container {
+        height: 150px !important;
+    }
 }
