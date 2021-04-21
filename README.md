@@ -42,3 +42,6 @@ $ Run the venv :
 
 Quit the venv :
 $ deactive
+
+Run project on Server :
+$ sudo nohup python3 app.py > log.txt 2>&1 &
