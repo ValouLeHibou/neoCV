@@ -142,7 +142,7 @@
 }
 
 .langSkill {
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-family: 'Tomorrow', sans-serif;
     /* VERTICAL ALIGN */
     position: absolute;
@@ -150,6 +150,10 @@
     height: 100px;
     /* VERTICAL ALIGN */
     text-align: center;
+}
+
+.langList li {
+    margin: 20px;
 }
 
 /* ##### HOBBIES ##### */

@@ -39,4 +39,4 @@ def fire():
     return render_template('project/secretProject/php/fire.php')
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, debug=True)
+    app.run(host="0.0.0.0", port=80) # add <debug=True> for debug
