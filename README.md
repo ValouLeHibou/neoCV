@@ -50,6 +50,9 @@ $ sudo nohup python3 app.py > log.txt 2>&1 &
 
 En cas de problème : Vérifier les éléments dans l'ordre :
 
+La commande `sudo nohup python3 app.py > log.txt 2>&1 &` necessite le mot de passe root
+Lancer dans un premier temps la commande à blanc `sudo python3 app.py`
+
 - OVH : 
 Vérifier que les DynHost pointent sur la même cible
 
