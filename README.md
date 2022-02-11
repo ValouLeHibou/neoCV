@@ -31,7 +31,7 @@ Liste des Technos :
 - Flask
 - Single Page App
 
-Run Flask on Raspberry pi 4 as server
+Run Flask on Raspberry NAS as server
 Initialize Python venv :
 
 $ python3 -m venv venv
@@ -45,3 +45,16 @@ $ deactive
 
 Run project on Server :
 $ sudo nohup python3 app.py > log.txt 2>&1 &
+
+En cas de problème : Vérifier les éléments dans l'ordre :
+
+OVH : 
+Vérifier que les DynHost pointent sur la même cible
+
+Box internet :
+NAT/PATérifier que les NAT/PAT sont toujours OK
+
+app.py :
+Vérifier L'ip et le Port dans le fichier : 0.0.0.0:8800
+
+cv.vguilbaud.fr => OVH => Box => NAS => App.py
