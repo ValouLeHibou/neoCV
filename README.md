@@ -46,15 +46,17 @@ $ deactive
 Run project on Server :
 $ sudo nohup python3 app.py > log.txt 2>&1 &
 
+---
+
 En cas de problème : Vérifier les éléments dans l'ordre :
 
-OVH : 
+- OVH : 
 Vérifier que les DynHost pointent sur la même cible
 
-Box internet :
+- Box internet :
 NAT/PATérifier que les NAT/PAT sont toujours OK
 
-app.py :
+- App.py :
 Vérifier L'ip et le Port dans le fichier : 0.0.0.0:8800
 
 cv.vguilbaud.fr => OVH => Box => NAS => App.py
